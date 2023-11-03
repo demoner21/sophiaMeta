@@ -82,7 +82,19 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            // glts
+            {
+                test: /\.(gltf)$/,
+                use: [
+                  {
+                    loader: 'gltf-webpack-loader',
+                    options: {
+                      // opções do loader, se houverem
+                    },
+                  },
+                ],
+              },
         ]
     }
 }
